@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from constants import CODE_TO_NAME, ZERO_VAR_COLUMNS, REQUIRED_COLUMNS, TARGET_COLUMN
+from src.constants import CODE_TO_NAME, ZERO_VAR_COLUMNS, REQUIRED_COLUMNS, TARGET_COLUMN
 from config.config import RAW_DATA_DIR
 
 import warnings
