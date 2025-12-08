@@ -24,7 +24,7 @@ def test_trainer_runs_without_errors(tmp_path):
     # минимальный набор параметров, чтобы модель обучилась
     params = {"iterations": 5, "verbose": False}
 
-    model, preprocessor = trainer.train(X, y, model_name="catboost", params=params)
+    model, preprocessor, calibrator = trainer.train(X, y, model_name="catboost", params=params)
 
     assert model is not None
     assert hasattr(model, "predict")
