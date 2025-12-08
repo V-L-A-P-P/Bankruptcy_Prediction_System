@@ -33,7 +33,7 @@ def test_full_pipeline(monkeypatch):
     tuner = CatboostHyperparameterTuner()
     trainer = ModelTrainer(pre, tuner)
 
-    model, preprocessor = trainer.train(
+    model, preprocessor, calibrated_model = trainer.train(
         X,
         y,
         model_name="catboost",
