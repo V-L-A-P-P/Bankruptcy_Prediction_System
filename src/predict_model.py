@@ -39,9 +39,9 @@ class Predictor:
 
         explainer = shap.TreeExplainer(self.model)
         shap_values = explainer(X)
-        shap.plots.waterfall(shap_values[1])
+        shap.plots.waterfall(shap_values[0]) # only for first prediction
         plt.tight_layout()
-        plt.savefig("shap_force_.png")
+        plt.savefig("waterfall_interpretation.png")
 
         if proba:
             return self.calibrated_model.predict_proba(X)[:,1]
