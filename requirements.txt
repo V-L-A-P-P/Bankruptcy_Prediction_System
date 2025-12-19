@@ -8,3 +8,8 @@ catboost==1.2.8
 lightgbm==4.6.0
 xgboost==2.0.3
 cupy-cuda12x==13.6.0
+pytest==9.0.1
+fastapi==0.123.9
+python-multipart==0.0.20
+uvicorn==0.38.0
+shap==0.50.0
