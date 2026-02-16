@@ -9,6 +9,40 @@
 
 ---
 
+## 🧩 Архитектура проекта (ключевые компоненты)
+
+```text
+Bankruptcy_Prediction_System/
+├── api/
+│   └── main.py
+├── src/
+│   ├── data_preprocessing.py
+│   ├── train_model.py
+│   ├── predict_model.py
+│   ├── hyperparameters_tuning.py
+│   ├── evaluating.py
+│   └── constants.py
+├── notebooks/
+│   ├── EDA.ipynb
+│   ├── feature_engineering.ipynb
+│   ├── model_selection.ipynb
+│   ├── hyperparameter_tuning.ipynb
+│   └── final_model.ipynb
+├── models/
+│   ├── calibrated_model.pkl
+│   └── preprocessor.pkl
+├── tests/
+│   ├── test_preprocessor.py
+│   ├── test_trainer.py
+│   ├── test_predictor.py
+│   └── test_full_pipeline.py
+├── config/
+│   └── config.py
+├── requirements.txt
+└── README.md
+```
+---
+
 ## 🎯 Цель проекта
 
 Построить **интерпретируемую и откалиброванную модель риск-скоринга**, пригодную для:
@@ -138,41 +172,8 @@ EDA использовался как основа для feature engineering и
 * объяснение решений модели
 
 **Пример визуализации:** `src/waterfall_interpretation.png`
+<img width="800" height="650" alt="image" src="https://github.com/user-attachments/assets/713ead89-1b27-407d-b83e-827d9218ea40" />
 
----
-
-## 🧩 Архитектура проекта (ключевые компоненты)
-
-```text
-Bankruptcy_Prediction_System/
-├── api/
-│   └── main.py
-├── src/
-│   ├── data_preprocessing.py
-│   ├── train_model.py
-│   ├── predict_model.py
-│   ├── hyperparameters_tuning.py
-│   ├── evaluating.py
-│   └── constants.py
-├── notebooks/
-│   ├── EDA.ipynb
-│   ├── feature_engineering.ipynb
-│   ├── model_selection.ipynb
-│   ├── hyperparameter_tuning.ipynb
-│   └── final_model.ipynb
-├── models/
-│   ├── calibrated_model.pkl
-│   └── preprocessor.pkl
-├── tests/
-│   ├── test_preprocessor.py
-│   ├── test_trainer.py
-│   ├── test_predictor.py
-│   └── test_full_pipeline.py
-├── config/
-│   └── config.py
-├── requirements.txt
-└── README.md
-```
 
 ---
 
