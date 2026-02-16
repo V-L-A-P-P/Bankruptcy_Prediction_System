@@ -222,6 +222,10 @@ Swagger UI доступен по адресу:
   "predictions": [0.002, 0.015, 0.41]
 }
 ```
+---
+Распределение риска на тестовых данных:
+<img width="3569" height="1769" alt="image" src="https://github.com/user-attachments/assets/34c4ad6a-2b14-4269-bbec-de082221309f" />
+
 
 ---
 
